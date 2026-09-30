@@ -8,7 +8,6 @@ from app.context import build_context
 from app.prompt import RAG_PROMPT
 from app.retriever import hybrid_search
 
-
 @lru_cache(maxsize=1)
 def get_llm():
     return ChatGroq(
